@@ -16,7 +16,7 @@
 #search{
   width: 97%;
   height: 30px;
-  border-radius: 5px;
+  border-radius: 3px;
   border: solid lightgray;
   float:left;
 }
@@ -28,6 +28,15 @@ hr {
 .input {
   display: inline;
   margin: 10px;
-  height: 20px;
-  width: 200px;
+  height: 30px;
+  width: 330px;
+  text-align: center;
+}
+#table{
+  width: 97% ;
+  border: solid 1px lightgray;
+}
+#form{
+  width: 97%;
+  border: solid lightgray;
 }
