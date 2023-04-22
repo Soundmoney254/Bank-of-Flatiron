@@ -1,24 +1,24 @@
 #root{
-  margin: 10px 10px;
+  margin: 20px 20px;
 }
 
 #header {
   background-color: rgb(133, 8, 228);
   height: 100px;
+  width: 100%;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: 16px;
   color: white;
+  border-radius: 6px;
 }
 
 #search{
-  width: 97%;
+  width: 99%;
   height: 30px;
-  border-radius: 3px;
-  border: solid lightgray;
-  float:left;
+  border-radius: 6px;
+  border: solid 2px lightgray;
 }
 
 hr {
@@ -33,16 +33,28 @@ hr {
   text-align: center;
 }
 #table{
-  width: 97% ;
-  border: solid 1px lightgray;
-}
-#form{
-  width: 97%;
-  border: solid lightgray;
-}
-td{
-  height: 30px;
-  text-align: center;
+  width: 99% ;
   border: solid 2px lightgray;
   border-collapse: collapse;
+  border-radius: 6px;
+}
+#form{
+  width: 99%;
+  border: solid 2px lightgray;
+  border-radius: 6px;
+  align-items: center;
+  justify-content: center;
+}
+td{
+  height: 50px;
+  text-align: center;
+  border: solid 2px lightgray;
+}
+th{
+  border: solid 2px lightgray;
+  height: 50px;
+  font-size: larger;
+}
+#button{
+  margin: 5px;
 }

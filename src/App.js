@@ -11,8 +11,6 @@ function App() {
       <hr/>
       <Search/>
       <hr/>
-      <br/>
-      <br/>
       <Form/>
       <hr/>
       <Table/>

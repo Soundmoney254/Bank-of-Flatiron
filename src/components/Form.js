@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import Button from './Button';
 
 function Form() {
   return (
@@ -9,6 +10,7 @@ function Form() {
             <input className='input' placeholder='Description'/>
             <input className='input' placeholder='Category'/>
             <input className='input'placeholder='Amount'/>
+            <Button/>
         </form>
     </div>
   )
