@@ -1,17 +1,33 @@
-.App {
-  text-align: center;
+#root{
+  margin: 10px 10px;
 }
-
-
 
 #header {
   background-color: rgb(133, 8, 228);
   height: 100px;
-  margin: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: 16px;
   color: white;
+}
+
+#search{
+  width: 97%;
+  height: 30px;
+  border-radius: 5px;
+  border: solid lightgray;
+  float:left;
+}
+
+hr {
+  border: none;
+}
+
+.input {
+  display: inline;
+  margin: 10px;
+  height: 20px;
+  width: 200px;
 }
