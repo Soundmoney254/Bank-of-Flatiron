@@ -1,9 +1,4 @@
-
-
 {
-  "json-server": {
-    "port": 8001
-  },
     "transactions": [
       {
         "id": 1,
