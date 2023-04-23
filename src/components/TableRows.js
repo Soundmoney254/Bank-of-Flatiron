@@ -20,8 +20,8 @@ function TableRows() {
   return (
     <>
       {transactions.map((transaction) => (
-        <tr key={transaction.id}>
-          <td><button className ="deleteButtons">Delete</button>{transaction.date}</td>
+        <tr key={transaction.id} className='transaction'>
+          <td><button className= "deleteButtons">Delete</button>{transaction.date}</td>
           <td>{transaction.description}</td>
           <td>{transaction.category}</td>
           <td>{transaction.amount}</td>

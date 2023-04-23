@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import TableBody from './TableBody';
 
+
 function Button() {
   const [newTransaction, setNewTransaction] = useState(null);
 
@@ -27,7 +28,6 @@ function Button() {
             .then((data) => {
               console.log(data.date, data.description, data.category, data.amount)
               setNewTransaction(data);
-              <TableBody newTransaction={newTransaction} />
             })
             .catch((error) => console.log(error));
           // form.reset();
