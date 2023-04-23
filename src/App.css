@@ -3,7 +3,10 @@
 }
 
 #header {
-  background-color: rgb(133, 8, 228);
+  background-color: rgb(91, 2, 160);
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.1) 25%, transparent 25%, transparent 75%, rgba(255, 255, 255, 0.1) 75%, rgba(255, 255, 255, 0.1)),
+                    linear-gradient(45deg, rgba(255, 255, 255, 0.1) 25%, transparent 25%, transparent 75%, rgba(255, 255, 255, 0.1) 75%, rgba(255, 255, 255, 0.1));
+  background-size: 5px 5px;
   height: 100px;
   width: 100%;
   display: flex;
@@ -25,25 +28,30 @@ hr {
   border: none;
 }
 
+#form{
+  width: 99%;
+  border: solid 2px lightgray;
+  border-radius: 6px;
+  text-align: center;
+}
 .input {
   display: inline;
   margin: 10px;
   height: 30px;
   width: 330px;
   text-align: center;
+  
 }
+input:focus {
+  border-bottom-color: blue;
+  border: 1px solid;
+}
+
 #table{
   width: 99% ;
   border: solid 2px lightgray;
   border-collapse: collapse;
   border-radius: 6px;
-}
-#form{
-  width: 99%;
-  border: solid 2px lightgray;
-  border-radius: 6px;
-  align-items: center;
-  justify-content: center;
 }
 td{
   height: 50px;
@@ -57,4 +65,11 @@ th{
 }
 #button{
   margin: 5px;
+}
+button{
+  margin: 10px;
+  padding: 10px;
+  font-size: larger;
+  border: solid 1px lightgray;
+  border-radius: 6px;
 }

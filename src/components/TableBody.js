@@ -1,33 +1,14 @@
 import React, { useState, useEffect } from 'react';
+import TableRows from './TableRows';
 
-function TableBody() {
-  const [transactions, setTransactions] = useState([]);
-  useEffect(() => {
-    async function fetchData() {
-      try {
-        const response = await fetch('http://localhost:8001/transactions');
-        const data = await response.json();
-        setTransactions(data);
-      } catch (error) {
-        console.log(error);
-      }
-    }
+function TableBody({newTransaction }) {
 
-    fetchData();
-  }, []);
 
   return (
     <tbody>
-        {transactions.map(transaction => (
-            <tr key={transaction.id}>
-            <td>{transaction.date}</td>
-            <td>{transaction.description}</td>
-            <td>{transaction.category}</td>
-            <td>{transaction.amount}</td>
-            </tr>
-        ))}
+       <TableRows/>
     </tbody>
   )
 }
 
-export default TableBody
+export default TableBody;
