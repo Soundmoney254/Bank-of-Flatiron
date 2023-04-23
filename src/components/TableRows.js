@@ -17,11 +17,27 @@ function TableRows() {
     }
   }
 
+  async function handleDelete(id) {
+    const confirmed = window.confirm('Are you sure you want to delete this transaction?');
+    if (confirmed) {
+      try {
+        await fetch(`http://localhost:8001/transactions/${id}`, {
+          method: 'DELETE',
+        });
+        setTransactions((prevState) =>
+          prevState.filter((transaction) => transaction.id !== id)
+        );
+      } catch (error) {
+        console.log(error);
+      }
+    }
+  }
+
   return (
     <>
       {transactions.map((transaction) => (
-        <tr key={transaction.id} className='transaction'>
-          <td><button className= "deleteButtons">Delete</button>{transaction.date}</td>
+        <tr key={transaction.id}>
+          <td><button className= "deleteButtons" onClick={() => handleDelete(transaction.id)}>Delete</button>{transaction.date}</td>
           <td>{transaction.description}</td>
           <td>{transaction.category}</td>
           <td>{transaction.amount}</td>
