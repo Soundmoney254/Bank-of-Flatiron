@@ -1,70 +1,108 @@
-# Getting Started with Create React App
+<br />
+<div align="center">
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h3 align="center">Bank of FlatIron - for all your security needs </h3>
 
-## Available Scripts
+  <p align="center">
+    This is a web application allows users to view or search their latest bank transactions and add new transactions to the transaction list
+  </p>
+</div>
 
-In the project directory, you can run:
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#license">License</a></li>
+  </ol>
+</details>
 
-### `npm start`
+### Built With
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+* HTML: provides the structure of the web page.
+* CSS: provides the styling of the web page.
+* JavaScript: provides the functionality of the web page.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<!-- GETTING STARTED -->
+## Getting Started/Setup
+### Installation
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Use the netlify live link
+  ```sh
+  https://main--thunderous-churros-1c7f0c.netlify.app/
+  ```
 
-### `npm run build`
+2. Clone the repo
+```sh
+https://github.com/Soundmoney254/Phase-1-ToWatchList
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<!-- USAGE EXAMPLES -->
+## Usage
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* Download the code files from the repository.
+* Open the files on your code editor.
+* Start a live server on the index.html file.
+* Open the index.html file in a web browser.
+* If you encounter an error fetching because of a rate limit Use the following alternative api keys by replacing them in the variable on line 15 of the javascript file.
+ ```sh
+    api Keys:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    k_k7rhb843
+    k_73iqyddm
+    
+   ```
+* A user can see the placeholder movies' trailer and detailed movie report with all the important information.
+* Enter a movie name in the Movie Name input accompanied with its release year in the year released input.
+* You can use this movies as a test but the website can search any movie publicly available in IMDBs' database which is most movies
 
-### `npm run eject`
+    ```sh
+      inception 2010
+      titanic 1997
+      sharper 2023
+      avatar 2009
+   ```
+* After fetching the website will render a movies trailer and it's movie report.
+* From there a user can decide to add the movie to their watched list by typing the movies name in the input field, selecting a ranking category and clicking the 'Add to watchlist' button.
+* The movie will be added to the watchlist together with buttons to send the movie to the already watched, and bin list.
+* All this lists are stored in the browsers locals storage in JSON format and readded back to the page when it loads fully.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<!-- ROADMAP -->
+## Features
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- The web page has a simple and user-friendly interface.
+- The web page allows a user to search either movies or series as long as they are available on IMDB and see their trailer and other  data.
+- The web page allows the user save the movies they want to see in their browser and see them later.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Limitations
+* The web page does not persist data to a database and hence clearing the cookies loses the list data.
+* IMDB's free api keys rate limit to 100 fetch requests a day for the free version. 
+* If you need to create a personal api key follow this link "https://imdb-api.com/Identity/Account/Register" to register and create an apikey and copy it from your profile to line 17
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<!-- CONTRIBUTING -->
+## Contributing
 
-## Learn More
+* Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<!-- LICENSE -->
+## License
+* The code is released under the General Public License.
+* Feel free to use and modify the code for personal or commercial purposes.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<!-- CONTACT -->
+## Author
+* This project was created by Samuel Mbugua.

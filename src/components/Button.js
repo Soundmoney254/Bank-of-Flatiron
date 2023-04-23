@@ -1,6 +1,4 @@
 import React, {useState} from 'react';
-import TableBody from './TableBody';
-
 
 function Button() {
   const [newTransaction, setNewTransaction] = useState(null);
