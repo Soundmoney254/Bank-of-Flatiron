@@ -11,7 +11,7 @@ function TableRows() {
     try {
       const response = await fetch('http://localhost:8001/transactions');
       const data = await response.json();
-      setTransactions(data);
+      setTransactions(data.reverse());
     } catch (error) {
       console.log(error);
     }
@@ -21,7 +21,7 @@ function TableRows() {
     <>
       {transactions.map((transaction) => (
         <tr key={transaction.id}>
-          <td>{transaction.date}</td>
+          <td><button className ="deleteButtons">Delete</button>{transaction.date}</td>
           <td>{transaction.description}</td>
           <td>{transaction.category}</td>
           <td>{transaction.amount}</td>

@@ -1,10 +1,12 @@
-import React from 'react';
+import React, {useState} from 'react';
 import TableBody from './TableBody';
 
 function Button() {
+  const [newTransaction, setNewTransaction] = useState(null);
+
     function handleSubmit(event){
         event.preventDefault()
-        const form = document.querySelector("#form");
+        // const form = document.querySelector("#form");
         const dateValue = document.querySelector("#date").value;
         const descriptionValue = document.querySelector("#description").value;
         const categoryValue = document.querySelector("#category").value;
@@ -15,34 +17,28 @@ function Button() {
           category: categoryValue,
           amount: amountValue,
         };
-    
-        fetch('http://localhost:8001/transactions', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(newTransaction),
-        })
-          .then((response) => response.json())
-          .then((data) => {
-            console.log(data);
-            return <TableBody newTransaction={data} />;
+        if(dateValue && descriptionValue && categoryValue && amountValue){
+          fetch('http://localhost:8001/transactions', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(newTransaction),
           })
-          .catch((error) => console.log(error));
-      form.reset();
+            .then((response) => response.json())
+            .then((data) => {
+              console.log(data.date, data.description, data.category, data.amount)
+              setNewTransaction(data);
+              <TableBody newTransaction={newTransaction} />
+            })
+            .catch((error) => console.log(error));
+          // form.reset();
+        }else {
+          alert("Make sure to add a value to all inputs")
+        }
     }
   return (
     <>
-    <button id='button' type='submit' onClick={handleSubmit}>Add Transaction</button>
+    <button id='addButton' type='submit' onClick={handleSubmit}>Add Transaction</button>
     </>
   )
 }
-
 export default Button;
-
-
-        // const tableRow =  <tr key={uuidv4()}>
-        // <td>{dateValue}</td>
-        // <td>{descriptionValue}</td>
-        // <td>{categoryValue}</td>
-        // <td>{amountValue}</td>
-        // </tr>
-        // import { dateValue, descriptionValue, categoryValue, amountValue } from './Form';

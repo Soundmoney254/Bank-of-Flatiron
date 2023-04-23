@@ -66,10 +66,15 @@ th{
 #button{
   margin: 5px;
 }
-button{
+#addButton{
   margin: 10px;
   padding: 10px;
   font-size: larger;
   border: solid 1px lightgray;
   border-radius: 6px;
+}
+.deleteButtons{
+  border: solid 1px lightgray;
+  border-radius: 6px;
+  float: left;
 }

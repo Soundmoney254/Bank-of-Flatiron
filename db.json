@@ -106,11 +106,67 @@
       "id": 16
     },
     {
-      "date": "2023-04-20",
-      "description": "hello",
-      "category": "there",
+      "date": "2023-04-06",
+      "description": "lyft",
+      "category": "Transportation",
       "amount": "1000",
       "id": 17
+    },
+    {
+      "date": "2023-04-06",
+      "description": "lyft",
+      "category": "Trabsoirt",
+      "amount": "5454",
+      "id": 18
+    },
+    {
+      "date": "2023-04-13",
+      "description": "lyft",
+      "category": "transportation",
+      "amount": "454",
+      "id": 19
+    },
+    {
+      "date": "2023-04-13",
+      "description": "lyft",
+      "category": "transportation",
+      "amount": "454",
+      "id": 20
+    },
+    {
+      "date": "2023-04-13",
+      "description": "lyft",
+      "category": "transportation",
+      "amount": "454",
+      "id": 21
+    },
+    {
+      "date": "2023-04-17",
+      "description": "lyft ",
+      "category": "Transport",
+      "amount": "4545",
+      "id": 22
+    },
+    {
+      "date": "2023-04-17",
+      "description": "lyft ",
+      "category": "Transport",
+      "amount": "4545",
+      "id": 23
+    },
+    {
+      "date": "2023-04-17",
+      "description": "lyft ",
+      "category": "Transport",
+      "amount": "4545",
+      "id": 24
+    },
+    {
+      "date": "2023-04-17",
+      "description": "lyft ",
+      "category": "Transport",
+      "amount": "4545",
+      "id": 25
     }
   ]
 }
