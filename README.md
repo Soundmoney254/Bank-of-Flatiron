@@ -57,35 +57,27 @@ https://github.com/Soundmoney254/Bank-of-Flatiron
 * The live server will launch a browser window with the app
 ```
 
-<!-- USAGE EXAMPLES -->
-## Usage
-
-* A user can see their recent transactions as fetched from the database
-* Enter a movie name in the Movie Name input accompanied with its release year in the year released input.
-* You can use this movies as a test but the website can search any movie publicly available in IMDBs' database which is most movies
-
-    ```sh
-      inception 2010
-      titanic 1997
-      sharper 2023
-      avatar 2009
-   ```
-* After fetching the website will render a movies trailer and it's movie report.
-* From there a user can decide to add the movie to their watched list by typing the movies name in the input field, selecting a ranking category and clicking the 'Add to watchlist' button.
-* The movie will be added to the watchlist together with buttons to send the movie to the already watched, and bin list.
-* All this lists are stored in the browsers locals storage in JSON format and readded back to the page when it loads fully.
-
-<!-- ROADMAP -->
 ## Features
 
 - The web page has a simple and user-friendly interface.
-- The web page allows a user to search either movies or series as long as they are available on IMDB and see their trailer and other  data.
-- The web page allows the user save the movies they want to see in their browser and see them later.
+- The web page has a table displaying all past transactions.
+- The web page has an add a transaction feature for appending transactions.
+- The web page has a search transactions feature for filtering transactions.
+- The web page has a delete a transaction feature for deleting transactions.
+
+
+<!-- USAGE EXAMPLES -->
+## Usage
+
+* A user can see their recent transactions as fetched from the database.
+* A user can add a new transaction to the transaction list, the transaction is posted to the database too.
+* A user can search a transaction using it's description on the search bar and it will filter out only transactions with the search term.
+* A user can delete a transaction which will delete it from the table and from the database.
+
+<!-- ROADMAP -->
 
 ## Limitations
-* The web page does not persist data to a database and hence clearing the cookies loses the list data.
-* IMDB's free api keys rate limit to 100 fetch requests a day for the free version. 
-* If you need to create a personal api key follow this link "https://imdb-api.com/Identity/Account/Register" to register and create an apikey and copy it from your profile to line 17
+* The web page doesn't have any known limitations at the moment.
 
 <!-- CONTRIBUTING -->
 ## Contributing
