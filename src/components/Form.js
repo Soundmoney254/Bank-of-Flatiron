@@ -1,7 +1,7 @@
 import React from 'react';
-import Button from './Button';
+import { NewTransactionButton } from './TableRows';
 
-function Form() { 
+function Form({setTransactions}) { 
   return (
     <div>
         <form id='form'>
@@ -25,7 +25,7 @@ function Form() {
             placeholder='Amount'
             required type='number'
             />
-            <Button/>
+            <NewTransactionButton setTransactions={setTransactions}/>
         </form>
     </div>
   )

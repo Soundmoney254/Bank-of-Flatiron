@@ -104,6 +104,27 @@
       "category": "Transport",
       "amount": "1000",
       "id": 18
+    },
+    {
+      "date": "2023-04-18",
+      "description": "lyft ",
+      "category": "Transport",
+      "amount": "1000",
+      "id": 22
+    },
+    {
+      "date": "2023-04-24",
+      "description": "lyft ",
+      "category": "Transport",
+      "amount": "5454",
+      "id": 23
+    },
+    {
+      "date": "2023-04-13",
+      "description": "default",
+      "category": "Transport",
+      "amount": "1000",
+      "id": 24
     }
   ]
 }
