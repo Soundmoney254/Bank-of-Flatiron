@@ -1,11 +1,10 @@
-import React, {useState} from 'react';
+import React from 'react';
 
 function Button() {
-  const [newTransaction, setNewTransaction] = useState(null);
-
+  
     function handleSubmit(event){
-        event.preventDefault()
-        // const form = document.querySelector("#form");
+        // event.preventDefault()
+        const form = document.querySelector("#form");
         const dateValue = document.querySelector("#date").value;
         const descriptionValue = document.querySelector("#description").value;
         const categoryValue = document.querySelector("#category").value;
@@ -25,10 +24,10 @@ function Button() {
             .then((response) => response.json())
             .then((data) => {
               console.log(data.date, data.description, data.category, data.amount)
-              setNewTransaction(data);
+             
             })
             .catch((error) => console.log(error));
-          // form.reset();
+          form.reset();
         }else {
           alert("Make sure to add a value to all inputs")
         }

@@ -14,9 +14,13 @@ function Search() {
       }
     });
   }
+
+  function changeColor(event){
+    event.target.style.borderBottomColor = 'rgb(35, 165, 240)';
+  }
       
   return (
-    <div><input id='search' onChange={handleSearch} placeholder='Search your Recent Transactions'/></div>
+    <div><input id='search' onChange={handleSearch} placeholder='Search your Recent Transactions' onFocus={changeColor}/></div>
   )
 
   }

@@ -4,11 +4,11 @@ import TableBody from './TableBody';
 
 function Table() {
   return (
-   <table id='table'>
+   <table id='table' class="table table-striped table-hover">
     <TableHeader/>
     <TableBody/>
    </table>
   )
 }
 
-export default Table
+export default Table;

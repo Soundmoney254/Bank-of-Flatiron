@@ -28,7 +28,7 @@ function TableRows() {
           prevState.filter((transaction) => transaction.id !== id)
         );
       } catch (error) {
-        console.log(error);
+        console.log(error); 
       }
     }
   }
