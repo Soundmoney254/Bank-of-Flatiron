@@ -88,57 +88,29 @@
       "date": "2022-07-09",
       "description": "Office lunch",
       "category": "Food",
-      "amount": "2000",
+      "amount": 2000,
       "id": 13
     },
     {
       "date": "2022-07-09",
       "description": "Office lunch Wednesday",
       "category": "Food",
-      "amount": "3000",
+      "amount": 3000,
       "id": 14
     },
     {
       "date": "2023-04-23",
       "description": "lyft ",
       "category": "Transport",
-      "amount": "1000",
+      "amount": 1000,
       "id": 18
     },
     {
-      "date": "2023-04-18",
-      "description": "lyft ",
-      "category": "Transport",
-      "amount": "1000",
-      "id": 22
-    },
-    {
       "date": "2023-04-19",
-      "description": "lyft ",
-      "category": "Transport",
-      "amount": "1000",
-      "id": 23
-    },
-    {
-      "date": "2023-04-20",
-      "description": "lyft ",
-      "category": "Transport",
-      "amount": "1000",
-      "id": 24
-    },
-    {
-      "date": "2023-04-24",
       "description": "another ",
-      "category": "Transport",
-      "amount": "1000",
-      "id": 25
-    },
-    {
-      "date": "2023-04-24",
-      "description": "last",
       "category": "try",
-      "amount": "1000",
-      "id": 26
+      "amount": 2412,
+      "id": 19
     }
   ]
 }

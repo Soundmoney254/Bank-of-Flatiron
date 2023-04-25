@@ -3,10 +3,11 @@ function NewTransactionButton({ setTransactions }) {
     function handleSubmit(event){
         event.preventDefault()
         const form = document.querySelector("#form");
-        const dateValue = document.querySelector("#date").value;
-        const descriptionValue = document.querySelector("#description").value;
-        const categoryValue = document.querySelector("#category").value;
-        const amountValue = document.querySelector("#amount").value;
+        let dateValue = document.querySelector("#date").value;
+        let descriptionValue = document.querySelector("#description").value;
+        let categoryValue = document.querySelector("#category").value;
+        let amountValue = Number(document.querySelector("#amount").value)
+       
         const newTransaction = {
           date: dateValue,
           description: descriptionValue,

@@ -6,8 +6,8 @@ function Search() {
     const searchTerm = event.target.value.toLowerCase();
     const rows = document.querySelectorAll("tbody tr");
     rows.forEach((row) => {
-      const category = row.querySelectorAll("td")[2].textContent.toLowerCase();
-      if (category.includes(searchTerm) || searchTerm === "") {
+      const description = row.querySelectorAll("td")[1].textContent.toLowerCase();
+      if (description.includes(searchTerm) || searchTerm === "") {
         row.style.display = "";
       } else {
         row.style.display = "none";
