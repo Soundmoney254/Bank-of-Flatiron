@@ -104,13 +104,6 @@
       "category": "Transport",
       "amount": 1000,
       "id": 18
-    },
-    {
-      "date": "2023-04-19",
-      "description": "another ",
-      "category": "try",
-      "amount": 2412,
-      "id": 19
     }
   ]
 }

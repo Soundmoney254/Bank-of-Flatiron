@@ -49,13 +49,14 @@
 2. Clone the repo
 ```sh
 https://github.com/Soundmoney254/Bank-of-Flatiron
+ ```
 
 
 * Download the code files from the repository.
 * Open the files on your code editor.
 * Run "npm start" inside the app's  root directory.
-* The live server will launch a browser window with the app
-```
+* The live server will launch a browser window with the app.
+
 
 ## Features
 
@@ -64,7 +65,6 @@ https://github.com/Soundmoney254/Bank-of-Flatiron
 - The web page has an add a transaction feature for appending transactions.
 - The web page has a search transactions feature for filtering transactions.
 - The web page has a delete a transaction feature for deleting transactions.
-
 
 <!-- USAGE EXAMPLES -->
 ## Usage
