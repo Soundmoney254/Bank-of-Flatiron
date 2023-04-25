@@ -4,7 +4,7 @@ import TableBody from './TableBody';
 
 function Table() {
   return (
-   <table id='table' class="table table-striped table-hover">
+   <table id='table' className="table table-striped table-hover">
     <TableHeader/>
     <TableBody/>
    </table>

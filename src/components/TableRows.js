@@ -34,6 +34,7 @@ function TableRows() {
   }
 
   return (
+    
     <>
       {transactions.map((transaction) => (
         <tr key={transaction.id}>
@@ -43,7 +44,6 @@ function TableRows() {
           <td>{transaction.amount}</td>
         </tr>
       ))}
-      <newTransactionButton setTransactions={setTransactions} />
     </>
   );
 }

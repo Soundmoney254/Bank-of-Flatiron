@@ -34,7 +34,7 @@
 
 * HTML: provides the structure of the web page.
 * CSS: provides the styling of the web page.
-* JavaScript: provides the functionality of the web page.
+* React JS: provides the functionality of the web page.
 
 <!-- GETTING STARTED -->
 ## Getting Started/Setup
@@ -43,30 +43,24 @@
 
 1. Use the netlify live link
   ```sh
-  https://main--thunderous-churros-1c7f0c.netlify.app/
+  https://vocal-selkie-9eacea.netlify.app/?
   ```
 
 2. Clone the repo
 ```sh
-https://github.com/Soundmoney254/Phase-1-ToWatchList
+https://github.com/Soundmoney254/Bank-of-Flatiron
+
+
+* Download the code files from the repository.
+* Open the files on your code editor.
+* Run "npm start" inside the app's  root directory.
+* The live server will launch a browser window with the app
 ```
 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-* Download the code files from the repository.
-* Open the files on your code editor.
-* Start a live server on the index.html file.
-* Open the index.html file in a web browser.
-* If you encounter an error fetching because of a rate limit Use the following alternative api keys by replacing them in the variable on line 15 of the javascript file.
- ```sh
-    api Keys:
-
-    k_k7rhb843
-    k_73iqyddm
-    
-   ```
-* A user can see the placeholder movies' trailer and detailed movie report with all the important information.
+* A user can see their recent transactions as fetched from the database
 * Enter a movie name in the Movie Name input accompanied with its release year in the year released input.
 * You can use this movies as a test but the website can search any movie publicly available in IMDBs' database which is most movies
 
