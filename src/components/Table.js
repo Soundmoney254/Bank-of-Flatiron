@@ -2,15 +2,14 @@ import React from 'react';
 
 function Table({transactions, handleDelete}) {
 
-
   //Receives transactions state as a prop, maps and renders them
-  const allTransactions = transactions.map((transaction) => (
+  const allTransactions = (transactions.map((transaction) => (
     <tr key={transaction.id}>
       <td><button className= "deleteButtons" onClick={() => handleDelete(transaction.id)}>Delete</button>{transaction.date}</td>
       <td>{transaction.description}</td>
       <td>{transaction.category}</td>
-      <td>{typeof transaction.amount === 'number' ? transaction.amount.toFixed(2) : '-'}</td>
-    </tr>
+      <td>{Number(transaction.amount).toFixed(2)}</td>
+    </tr>)
   )) 
 
   return (

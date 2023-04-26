@@ -11,7 +11,7 @@ function App() {
   useEffect(() => {
     fetchData();
   }, []);
-
+// A function for fetching data from db.json and passing it to the children components
   async function fetchData() {
     try {
       const response = await fetch('http://localhost:8001/transactions');
@@ -39,15 +39,37 @@ function App() {
       }
     }
   }
+
+  function updateTransactions(newTransaction, event){
+    event.preventDefault();
+    const form = document.querySelector("#form");
+      fetch('http://localhost:8001/transactions', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(newTransaction),
+      })
+        .then((response) => response.json())
+        .then((postedData) => {
+          console.log(postedData.id, postedData.date, postedData.description, postedData.category, postedData.amount)
+          let updatedTransactionList = [...transactions, postedData]
+          setTransactions(updatedTransactionList)
+          console.log(updatedTransactionList)
+         
+        })
+        .catch((error) => console.log(error));
+      form.reset();
+      
+  }
+
   return (
     <div className="App">
       <Header/>
       <hr/>
       <Search/>
       <hr/>
-      <Form/>
+      <Form updateTransactions = {updateTransactions}  />
       <hr/>
-      <Table transactions={transactions} handleDelete ={handleDelete} />
+      <Table transactions = {transactions} handleDelete ={handleDelete} />
     </div>
   );
 }
