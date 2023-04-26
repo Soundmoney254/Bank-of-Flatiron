@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 
 function Form({updateTransactions}) { 
   const [newTransaction, setNewTransaction] = useState({
@@ -7,6 +7,8 @@ function Form({updateTransactions}) {
     category: "", 
     amount:"",
   });
+
+  const [resetForm, setResetForm] = useState(false);
 
   function handleChange(event) {
     const name = event.target.name;
@@ -18,10 +20,30 @@ function Form({updateTransactions}) {
       [name]: value,
     });
   }
+  
+  function handleSubmit(event) {
+    event.preventDefault();
+    updateTransactions(newTransaction);
+    setResetForm(true);
+  }
 
+  useEffect(() => {
+    handleReset();
+  }, [resetForm]);
+
+  function handleReset() {
+    setNewTransaction({
+      date: '',
+      description: '',
+      category: '',
+      amount: '',
+    });
+    setResetForm(false);
+  }
   return (
     <div>
-        <form id='form' onSubmit={(event) => updateTransactions(newTransaction, event)}>
+        <form id='inputForm' 
+        onSubmit={event => handleSubmit(event)}>
             <label htmlFor='date' className='input' > Date: </label>
             <input id ='date'
              className='input' 

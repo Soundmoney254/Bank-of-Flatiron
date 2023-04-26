@@ -7,9 +7,9 @@ import Table from './components/Table';
 
 function App() {
   const [transactions, setTransactions] = useState([]);
-
   useEffect(() => {
     fetchData();
+    
   }, []);
 // A function for fetching data from db.json and passing it to the children components
   async function fetchData() {
@@ -21,7 +21,6 @@ function App() {
       console.log(error);
     }
   }
-
 
   //Handler function for delete buttons
   async function handleDelete(id) {
@@ -40,9 +39,7 @@ function App() {
     }
   }
 
-  function updateTransactions(newTransaction, event){
-    event.preventDefault();
-    const form = document.querySelector("#form");
+  function updateTransactions(newTransaction){
       fetch('http://localhost:8001/transactions', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -51,14 +48,10 @@ function App() {
         .then((response) => response.json())
         .then((postedData) => {
           console.log(postedData.id, postedData.date, postedData.description, postedData.category, postedData.amount)
-          let updatedTransactionList = [...transactions, postedData]
-          setTransactions(updatedTransactionList)
-          console.log(updatedTransactionList)
-         
+          setTransactions([postedData, ...transactions])
+          console.log(transactions)
         })
-        .catch((error) => console.log(error));
-      form.reset();
-      
+        .catch((error) => console.log(error));   
   }
 
   return (
@@ -69,9 +62,8 @@ function App() {
       <hr/>
       <Form updateTransactions = {updateTransactions}  />
       <hr/>
-      <Table transactions = {transactions} handleDelete ={handleDelete} />
+      <Table transactions = {transactions} handleDelete = {handleDelete} />
     </div>
   );
 }
-
 export default App;
