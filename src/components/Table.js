@@ -26,7 +26,7 @@ function Table({transactions, handleDelete}) {
 
   useEffect(() => {
     createRows();
-  }, [transactions]);
+  }, [transactions, createRows]);
 
   return (
     <table id='table' className="table table-striped table-hover">
